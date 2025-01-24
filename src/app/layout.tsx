@@ -32,7 +32,6 @@ export default function RootLayout({
           src="/public/assets/background.jpg"
           alt="Background"
           layout="fill"
-          objectFit="contain"
         />
         {children}
       </body>
