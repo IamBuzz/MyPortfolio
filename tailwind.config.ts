@@ -14,6 +14,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        'hero-pattern': "url('/public/assets/background.png')",
+      },
     },
   },
   plugins: [heroui()],
