@@ -15,7 +15,7 @@ export default {
         foreground: "var(--foreground)",
       },
       backgroundImage: {
-        'hero-pattern': "url('/public/assets/background.png')",
+        'hero-pattern': "url('/assets/background.png')",
       },
     },
   },
