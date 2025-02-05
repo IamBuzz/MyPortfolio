@@ -26,7 +26,7 @@ function Nav() {
   ];
 
   return (
-    <Navbar className="flex pt-" isBordered isBlurred isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
+    <Navbar className="flex" isBordered isBlurred isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent className="sm:hidden bg-opacity-10" justify="start">
         <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
       </NavbarContent>
@@ -55,7 +55,7 @@ function Nav() {
             />
             <p className="NavHeroName font-bold text-3xl pl-5">Portfolio</p>
           </NavbarBrand>
-          <NavbarItem className="text-lg font-medium "isActive>
+          <NavbarItem className="text-lg"isActive>
             <Link href='/'>Home</Link>
           </NavbarItem>
           <NavbarItem className="text-lg">
@@ -67,7 +67,7 @@ function Nav() {
           <NavbarItem className="text-lg text-center">
             <Link href='/'>Projects</Link>
           </NavbarItem>
-          <NavbarItem className="text-lg font-medium text-center">
+          <NavbarItem className="text-lg text-center">
             <Link href='/'>Contact</Link>
           </NavbarItem>
         </NavbarContent>
@@ -76,7 +76,7 @@ function Nav() {
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
-                className="w-1/3 bg-transparent"
+                className="w-1/3 bg-transparent text-2xl MobileNavbar"
                 color={
                   index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
                 }

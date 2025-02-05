@@ -7,8 +7,18 @@
     padding: 0;
 }
 
+.MobileNavbar{
+    transition: 0.5s;
+    border-radius: 10px;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+}
 
-
+.MobileNavbar:hover{
+    background-color:#FAF7F0;
+    color: #3B3030;
+}
 
 Navbar{
     opacity: 10%;
